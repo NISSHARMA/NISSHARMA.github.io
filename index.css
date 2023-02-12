@@ -65,6 +65,13 @@ body {
     border: 1px solid red;
 }
 
+#home_div,#about_div{
+    height:800px ;
+    border: 1px solid red;
+    width: 90%;
+    margin: auto;
+}
+
 
 
 
