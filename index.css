@@ -1,0 +1,33 @@
+
+body{
+    background-color: rgb(29 29 29);
+}
+
+
+#nav-menu{
+    
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+#nav-menu-name{
+    font:Garamond, serif;
+    color: aliceblue;
+    font-size: x-large;    
+    
+
+}
+#nav-menu_subdiv1{
+    width: 20%;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav-menu_subdiv2{
+    height: 80px;
+    border: 1px solid green;
+    width: 50%;
+}
+
