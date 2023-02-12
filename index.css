@@ -1,39 +1,125 @@
-
-body{
+body {
     background-color: rgb(29 29 29);
+    box-sizing: border-box;
+    
 }
 
 
-#nav-menu{
-    
-    border: 1px solid red;
+#nav-menu {
+
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0
 }
-#nav-menu-name{
-    font:Garamond, serif;
-    color: aliceblue;
-    font-size: x-large;    
-    
 
+#nav-menu-name {
+    font: Garamond, serif;
+    color: aliceblue;
+    font-size: x-large;
 }
-#nav-menu_subdiv1{
+
+#nav-menu_subdiv1 {
     width: 20%;
-    border: 1px solid green;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#nav-menu_subdiv2{
+
+#nav-menu_subdiv2 {
     height: 80px;
-    border: 1px solid green;
     width: 50%;
     display: flex;
     justify-content: space-around;
-    align-items:center ;
+    align-items: center;
     color: aliceblue;
     font-size: 20px;
     cursor: pointer;
 }
 
+#nav-menu_responsive_icon {
+    display: none;
+}
+
+#responsive_navbar {
+    /* height: 500px;*/
+    /*width: 50%;*/
+    display: none;
+}
+
+#responsive_navbar a {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:551px) and (max-width:900px) {
+    #nav-menu_responsive_icon {
+        float: right;
+        display: flex;
+        margin-right: 0px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    #nav-menu_subdiv2 a {
+        display: none;
+    }
+
+    #nav-menu_subdiv1 {
+        margin-left: 100px;
+    }
+
+
+}
+
+@media screen and (max-width:551px) {
+    #nav-menu_responsive_icon {
+        float: right;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    #nav-menu_responsive_icon {
+        justify-content: flex-end;
+        margin-left: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+    }
+
+    #nav-menu_subdiv2 a {
+        display: none;
+
+    }
+
+    #nav-menu_subdiv1 {
+        margin-left: 100px;
+    }
+}
