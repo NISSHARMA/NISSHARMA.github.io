@@ -1,8 +1,9 @@
 body {
     background-color: rgb(29 29 29);
     box-sizing: border-box;
-    
+
 }
+
 #nav-menu {
 
     display: flex;
@@ -60,16 +61,58 @@ body {
     cursor: pointer;
 }
 
-.nav-link home{
+.nav-link home {
     height: 200px;
-    border: 1px solid red;
 }
 
-#home_div,#about_div{
-    height:800px ;
-    border: 1px solid red;
-    width: 90%;
+#home_div,
+#about_div {
+    height: 400px;
+    width: 80%;
     margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#home_div_subdiv1 {
+    height: 400px;
+    width: 30%;
+    text-align: center;
+    word-spacing: 10%;
+    line-height: 20px;
+    
+}
+#home_div_subdiv1 p{
+    margin-top: 50px;
+}
+#home_div_subdiv2 {
+    height: 400px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home_div_subdiv1_hello {
+    font-size: 40px;
+    font-weight: bolder;
+    color: aliceblue;
+}
+#user-detail-name{
+  color:rgb(255,198,0) ;  
+  font-size:x-larger;
+}
+#user-detail-intro{
+    color: aliceblue;
+    font-size: large;
+    
+}
+.home-img{
+    border-radius: 50%;
+    width: 80%;
+
 }
 
 
