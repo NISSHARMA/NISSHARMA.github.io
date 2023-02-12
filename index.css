@@ -3,8 +3,6 @@ body {
     box-sizing: border-box;
     
 }
-
-
 #nav-menu {
 
     display: flex;
@@ -60,6 +58,11 @@ body {
     color: aliceblue;
     font-size: 20px;
     cursor: pointer;
+}
+
+.nav-link home{
+    height: 200px;
+    border: 1px solid red;
 }
 
 
