@@ -1,4 +1,4 @@
-body {
+/*body {
     background-color: rgb(29 29 29);
     box-sizing: border-box;
 
@@ -10,7 +10,7 @@ body {
     align-items: center;
     justify-content: space-between;
     position: -webkit-sticky;
-    /* Safari */
+    /* Safari 
     position: sticky;
     top: 0;
     z-index: 2;
@@ -48,7 +48,7 @@ body {
 
 #responsive_navbar {
     /* height: 500px;*/
-    /*width: 50%;*/
+    /*width: 50%;
     display: none;
 }
 
@@ -125,15 +125,15 @@ body {
     width: 70%;
 }
 
-#skills_div {
+.skills-card {
     width: 80%;
     border: 1px solid red;
     margin: auto;
-    height: 400px;
+    height: 600px;
     margin-top: 50px;
 }
 
-#about_me_heading {
+#about.about.section {
     text-align: center;
     color: rgb(255, 198, 0);
 }
@@ -348,4 +348,4 @@ body {
         grid-template-columns: repeat(2,1fr);
     }
    
-}
+}*/
