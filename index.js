@@ -9,3 +9,9 @@ function myfunction(){
   }
 }
 
+
+function handleclose(){
+  let y=document.getElementById("responsive_navbar")
+    y.style.display="none"
+  
+}
