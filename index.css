@@ -2,10 +2,12 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth
 }
 
 body {
     background-color: rgb(29 29 29);
+    
 }
 
 #nav-menu {
@@ -14,8 +16,11 @@ body {
     background-color: rgb(43, 40, 40);
     display: flex;
     justify-content: space-between;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    
 }
 
 #nav-name {
@@ -57,7 +62,7 @@ body {
     height: 400px;
     width: 90%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
 }
 
@@ -146,7 +151,7 @@ body {
     width: 30px;
     color: #E6E8FA;
     align-items: end;
-    margin-top: 10px;
+   margin-top: 10px;
     margin-left: 80%;
 }
 
@@ -155,7 +160,7 @@ body {
 }
 
 #about{
-  height: 370px;
+  height: 450px;
   width: 90%;
   border: 1px solid red;
   margin: auto;
@@ -172,13 +177,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 #about_subdiv1 span{
     margin-left: 10px;
     color: #F5C542;
 }
 #user-detail-intro{
-    border: 1px solid blue;
     height: 300px;
     width: 45%;
     color: #E6E8FA;
@@ -201,7 +206,6 @@ body {
     justify-content: space-around;
 }
 #about_subdiv3{
-    border: 1px solid blue;
     height: 300px;
     width: 45%;
     display: flex;
@@ -213,10 +217,50 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .home-img{
-    border-radius: 50%;
+    border-radius: 50%; 
     
 }
+#skills{
+    width: 90%;
+    margin: auto;
+    height: 500px;
+    border: 1px solid red;
+   margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.skills-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #E6E8FA;
+    font-size: x-large;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#skill_heading{
+    color: #E6E8FA;
+    font-size: 34px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
 
+}
+#prjects_heading{
+    color: #E6E8FA;
+    font-size: 34px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 100px;
+
+}
+#projects{
+    border: 1px solid red;
+    width: 80%;
+    margin: auto;
+    height: 800px;
+}
 
 
 
@@ -250,8 +294,7 @@ body {
     }
     #home_subdiv2{
         width: 100%;
-        margin: auto;
-        
+        margin: auto;        
     }
 
 
