@@ -9,6 +9,9 @@ body {
     background-color: rgb(29 29 29);
     
 }
+a{
+    text-decoration: none;
+}
 
 #nav-menu {
     border: 1px solid red;
@@ -252,16 +255,74 @@ body {
     font-size: 34px;
     font-weight: 400;
     text-align: center;
-    margin-top: 100px;
+   
 
 }
 #projects{
-    border: 1px solid red;
-    width: 80%;
+    width: 90%;
     margin: auto;
-    height: 800px;
+    height: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    padding-top: 100px;
+}
+.project-card{
+    padding: 20px;
+}
+.project-title{
+    font-size: 30px;
+    color: #F5C542;
+    margin-top: 20px;
+}
+.project-description{
+    color: #E6E8FA;
+    font-size: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.project-tech-stack{
+    font-size: larger;
+    color: #F5C542;
+    margin-right: 10px;
+}
+.project-tech-stack_div{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+#github{
+    width: 90%;
+    margin: auto;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid red;
+}
+#github-top-langs{
+    background-color: black;
+}
+#github-top-langs_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+#contact{
+    width: 90%;
+    border: 1px solid red;
+    margin: auto;
+    height: 400px;    
+}
+#contact-subdiv1{
+    height: 50px;
+    color: #E6E8FA;
+    font-size: 34px;
+    font-weight: 400;
+    text-align: center;
+}
 
 
 
