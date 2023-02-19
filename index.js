@@ -18,7 +18,7 @@ function handleclose(){
 
 function openResume(){
   window.open(
-    './public/Nisha-Sharma-Resume.pdf',
+    'https://drive.google.com/file/d/1Wpj4rOUpaMb5GvW60u-jds_l7IsifFx-/view?usp=share_link',
     '_blank' // <- This is what makes it open in a new window.
   );
 }
