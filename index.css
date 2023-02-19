@@ -280,7 +280,7 @@ a{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 40px;
-    padding-top: 100px;
+   
 }
 .project-card{
     padding: 20px;
