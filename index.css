@@ -55,6 +55,15 @@ a{
     padding: 10px;
 
 }
+#resume-button-1 {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
 
 #nav-menu-subdiv2 a:hover {
     border: 2px solid #F5C542
@@ -110,16 +119,22 @@ a{
     text-align: center;
 }
 
-#resume-link-2 {
+#resume-button-2{
     font-size: larger;
     color: aliceblue;
     text-decoration: none;
     padding: 10px;
     border: 2px solid #F5C542;
     margin-top: 20px;
+    background-color: rgb(29 29 29) ;
 
 }
-
+#resume-link-2{
+   color: #E6E8FA;
+}
+#resume-link-2:hover{
+    color: black;
+}
 #resume-button-2:hover {
     cursor: pointer;
     background-color: #F5C542;

@@ -15,3 +15,10 @@ function handleclose(){
     y.style.display="none"
   
 }
+
+function openResume(){
+  window.open(
+    './public/Nisha-Sharma-Resume.pdf',
+    '_blank' // <- This is what makes it open in a new window.
+  );
+}
