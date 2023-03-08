@@ -5,74 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/d7fb88724e.js" crossorigin="anonymous"></script>
-    <i class="fa fa-envelope" style="font-size:24px"></i>
+    <title>Document</title>
 </head>
 
 <body>
 
     <div id="nav-menu">
-        <div id="nav-name">
-            < N i s h a />
-        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="#home">
+                < N I S H A />
+            </a>
 
-        <div id="nav-menu-subdiv2">
-
-            <a class="nav-link home" href="#home">Home</a>
-            <a class="nav-link about" href="#about" class="about section">About me</a>
-            <a class="nav-link skills" href="#skills">Skills</a>
-            <a class="nav-link projects" href="#projects">Projects</a>
-            <a class="nav-link contact" href="#contact">Contact me</a>
-            <button id="resume-button-1" onclick="openResume()"> <a id="resume-button-1" class="nav-link resume"
+            <button id="resume-button-1" onclick="openResume()"> <a id="resume-link-1"
                     href="./public/Nisha-Sharma-Resume.pdf" download>Resume</a></button>
-        </div>
 
-        <p id="nav-menu_responsive_icon" onclick="myfunction()">&#9776;</p>
+            <a class="nav-link contact" onclick="myFunction()" href="#contact">Contact me</a>
+            <a class="nav-link projects" onclick="myFunction()" href="#projects">Projects</a>
+            <a class="nav-link skills" onclick="myFunction()" href="#skills">Skills</a>
+            <a class="nav-link about" onclick="myFunction()" href="#about" class="about section">About me</a>
+            <a class="nav-link home" onclick="myFunction()" href="#home">Home</a>
 
-        <div id="responsive_navbar">
-            <img id="sidebarcloseicon" onclick="handleclose()"
-                src="https://cdn-icons-png.flaticon.com/512/2550/2550327.png" alt="">
-            <a href="#home">Home</a>
-            <a href="#about">About me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact me</a>
-            <a target="_blank"
-                href="https://drive.google.com/file/d/1Wpj4rOUpaMb5GvW60u-jds_l7IsifFx-/view?usp=share_link"
-                download>Resume</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
 
     </div>
-
 
 
 
     <div id="home">
+        <div id="home_subdiv">
+            <div id="home_subdiv1">
+                <img width="100%" src="./public//animationgif.gif" alt="">
+            </div>
+            <div id="home_subdiv2">
+                <p id="hey_welcome">Hey there 👋.</p>
+                <p id="user-detail-name"> I'm Nisha Sharma</p>
+                <p id="web_developer_title">A Full Stack Web Developer </p>
+                <button id="resume-button-2"><a id="resume-link-2" href="./public/Nisha-Sharma-Resume.pdf"
+                        download>Resume</a></button>
 
-        <div id="home_subdiv1">
-            <img width="80%" height="90%" src="./public/finalimage.jpg" alt="">
-        </div>
-        <div id="home_subdiv2">
-            <p id="hey_welcome">Hey Welcome</p>
-            <p id="user-detail-name">I'm Nisha Sharma</p>
-            <p id="web_developer_title">Full Stack Web Developer</p>
-            <button id="resume-button-2" onclick="openResume()">
-                <a id="resume-button-2" href="./public/Nisha-Sharma-Resume.pdf" download>Resume</a></button>
+            </div>
         </div>
     </div>
 
-    </span>
 
-    <div id="about" class="about section">
+    <div id="about">
         <div id="about_subdiv1">
             About <span>Me</span>
         </div>
 
         <div id="about_main_subdiv">
             <div id="user-detail-intro">
-                A full stack web developer/MERN Developer with 1000+ hours of coading experiance. My objective is simply
+                A full stack web developer/MERN developer with 1000+ hours of coading experiance. My objective is simply
                 to be the
                 best web developer that i can be and to contribute to the technology industry all that i know.
                 A quick learner and problem solver who can compete with the fast growing tech industry. Experties in
@@ -86,9 +75,7 @@
 
             </div>
         </div>
-
     </div>
-
 
 
     <div id="skills">
@@ -194,7 +181,7 @@
 
         <div id="projects_main_div">
             <div class="project-card">
-                <img width="100%" src="./public/freashlyclone.png" alt="">
+                <img class="project-img" width="100%" src="./public/freashlyclone.png" alt="">
                 <p class="project-title">Freshly.com</p>
                 <p class="project-description">Foodium is a clone of online food delivery website freshly.com.Many
                     functionaly are provided here like login/signup,cart and filtering the food with its catagory</p>
@@ -214,12 +201,12 @@
                         alt=""></a>
                 <a target="_blank" class="project-deployed-link" href="https://foodium-project.netlify.app/"><img
                         width="80px" height="45px"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ90jb7nbgF7z3kRMUxRfMEz8Q0WpKDHGpjBye_JzRqjqgCV46ZsX_CMtqln5TUcsINTmc&usqp=CAU"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSEh8OsrO6brT3qDt3_beaoMQhZ3dBKtyC_A&usqp=CAU"
                         alt=""></a>
             </div>
 
             <div class="project-card">
-                <img width="100%" src="./public/dellclone.png" alt="dellclone">
+                <img class="project-img" width="100%" src="./public/dellclone.png" alt="dellclone">
                 <p class="project-title">Dell.com</p>
                 <p class="project-description">Dell.com is one of the largest technology company. It develops, sells,
                     repairs, and supports computers and related products and services</p>
@@ -244,12 +231,12 @@
                 </a>
                 <a target="_blank" class="project-deployed-link"
                     href="https://sensitive-government-8954.vercel.app/"><img width="80px" height="45px"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ90jb7nbgF7z3kRMUxRfMEz8Q0WpKDHGpjBye_JzRqjqgCV46ZsX_CMtqln5TUcsINTmc&usqp=CAU"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSEh8OsrO6brT3qDt3_beaoMQhZ3dBKtyC_A&usqp=CAU"
                         alt=""></a>
             </div>
 
             <div class="project-card">
-                <img width="100%" src="./public//bigbascketclone.png" alt="bigbascketclone">
+                <img class="project-img" width="100%" src="./public//bigbascketclone.png" alt="bigbascketclone">
                 <p class="project-title">Bigbasket.com</p>
                 <p class="project-description">Bigbasket is a online grocery selling store. Online shopping now made
                     easy
@@ -274,13 +261,13 @@
                         alt=""></a>
                 <a target="_blank" class="project-deployed-link" href="https://regal-melba-806b31.netlify.app/"><img
                         width="80px" height="45px"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ90jb7nbgF7z3kRMUxRfMEz8Q0WpKDHGpjBye_JzRqjqgCV46ZsX_CMtqln5TUcsINTmc&usqp=CAU"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSEh8OsrO6brT3qDt3_beaoMQhZ3dBKtyC_A&usqp=CAU"
                         alt=""></a>
             </div>
 
 
             <div class="project-card">
-                <img width="100%" src="./public/jrewclone.png" alt="jrewclone">
+                <img class="project-img" width="100%" src="./public/jrewclone.png" alt="jrewclone">
                 <p class="project-title">Fashion.com</p>
                 <p class="project-description">Fashion.com is a online clothing, home & living e-commerce store.Shop
                     Fashion.com for the Highest Quality Women's and Men's Clothing and see the entire selection of
@@ -309,16 +296,17 @@
                         alt=""></a>
                 <a target="_blank" class="project-deployed-link" href="https://godly-front-5324.vercel.app/"><img
                         width="80px" height="45px"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ90jb7nbgF7z3kRMUxRfMEz8Q0WpKDHGpjBye_JzRqjqgCV46ZsX_CMtqln5TUcsINTmc&usqp=CAU"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSEh8OsrO6brT3qDt3_beaoMQhZ3dBKtyC_A&usqp=CAU"
                         alt=""></a>
             </div>
 
 
         </div>
-
     </div>
 
 
+
+    <p id="githubHeading">Github Stats</p>
     <div class="react-activity-calendar">
         <img src="" alt="">
     </div>
@@ -353,8 +341,8 @@
 
         <div id="contact-subdiv2">
             <div class="contact-subdiv2_subdiv">
-                <img width="50%"
-                    src="data:image/png;base64,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"
+                <img width="75%" height=""
+                    src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/94750157164341.5b4f26a1eac6c.gif"
                     alt="">
             </div>
             <div class="contact-subdiv2_subdiv">
@@ -420,13 +408,7 @@
 
 
 
-
-
-
-
 </body>
-
-
 
 </html>
 
