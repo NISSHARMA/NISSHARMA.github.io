@@ -633,6 +633,7 @@ input[type=submit]:hover {
     #ham-menu {
         display: block;
         color: #ffffff;
+
     }
 
     nav a#logo,
@@ -657,7 +658,7 @@ input[type=submit]:hover {
 
     #home {
         width: 80%;
-        display: block;
+        flex-direction: column;
     }
 
     #info-div {
@@ -706,7 +707,7 @@ input[type=submit]:hover {
     }
 
     .project-card {
-        display: block;
+        flex-direction: column;
         height: auto;
     }
 
@@ -724,7 +725,7 @@ input[type=submit]:hover {
     }
 
     #contact-div {
-        display: block;
+       flex-direction: column;
         width: 90%;
     }
 
@@ -764,9 +765,10 @@ input[type=submit]:hover {
         height: calc(100vh - 65.18px);
     }
 
+    
     #home {
         width: 90%;
-        display: block;
+       flex-direction: column;
     }
 
     #info-div {
@@ -815,7 +817,7 @@ input[type=submit]:hover {
     }
 
     .project-card {
-        display: block;
+        flex-direction: column;
         height: auto;
     }
 
@@ -834,7 +836,210 @@ input[type=submit]:hover {
     }
 
     #contact-div {
-        display: block;
+       flex-direction: column;
+        width: 90%;
+    }
+
+    #contact-subdiv1,
+    #contact-subdiv2 {
+        width: 100%;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    #github-subdiv1 {
+        flex-direction: column;
+    }
+
+    #github img {
+        width: 80%;
+        padding: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 300px) {
+    
+
+    
+    #home {
+        width: 90%;
+       flex-direction: column;
+    }
+
+    #info-div {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+
+    #myname,
+    #name,
+    #title {
+        text-align: center;
+    }
+
+    #Home_subdiv1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #Home_subdiv2 {
+        width: 100%;
+
+    }
+
+    #about_main_subdiv {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #user-detail-intro {
+        width: 100%;
+        height: auto;
+    }
+
+    #about_subdiv3 {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    #skills_subdiv {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project-card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .project-image-div {
+        width: 90%;
+        margin: auto;
+        height: auto;
+    }
+
+    .project-info-div {
+        width: 90%;
+        margin: auto;
+        height: auto;
+        margin-top: 20px;
+
+    }
+
+    #contact-div {
+       flex-direction: column;
+        width: 90%;
+    }
+
+    #contact-subdiv1,
+    #contact-subdiv2 {
+        width: 100%;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    #github-subdiv1 {
+        flex-direction: column;
+    }
+
+    #github img {
+        width: 80%;
+        padding: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 200px) {
+    
+
+    
+    #home {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+
+    }
+    #logo{
+        font-size: 10px;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    #info-div {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+
+    #myname,
+    #name,
+    #title {
+        text-align: center;
+    }
+
+    #Home_subdiv1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #Home_subdiv2 {
+        width: 100%;
+
+    }
+
+    #about_main_subdiv {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #user-detail-intro {
+        width: 100%;
+        height: auto;
+    }
+
+    #about_subdiv3 {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    #skills_subdiv {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project-card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .project-image-div {
+        width: 90%;
+        margin: auto;
+        height: auto;
+    }
+
+    .project-info-div {
+        width: 90%;
+        margin: auto;
+        height: auto;
+        margin-top: 20px;
+
+    }
+
+    #contact-div {
+       flex-direction: column;
         width: 90%;
     }
 
@@ -896,21 +1101,3 @@ input[type=submit]:hover {
     }
 
 }
-
-
-/*CartModel={
-    image:String,
-    price::-Number,
-    Quantity:Number
-}
-
-AddressModel:{
-    fullname:String,
-    mobile:Number,
-    email:String,
-    address:String,
-    pincode:Number,
-    city:String,
-    state:String,
-    country:String
-}*/
