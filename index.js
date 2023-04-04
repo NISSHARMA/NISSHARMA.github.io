@@ -26,7 +26,7 @@ function paddingFunction() {
   x.style.padding = "100px"
 }
 
-document.getElementById("submit").addEventListener("click", saveFile() );
+document.querySelector("form").addEventListener("submit", saveFile );
 
 
 
@@ -37,15 +37,15 @@ function saveFile(e) {
 
   let Formdata = JSON.parse(localStorage.getItem("portfolioData")) || []
 
-  let name = doccument.getElementById("fname")
-  let email = doccument.getElementById("email")
-  let text = document.getElementById("subject")
+  let name=document.getElementById("fname").value
+  let email=document.getElementById("email").value
+  let text=document.getElementById("subject").value
+  
   let data = {
-    "name": name.value,
-    "email": email.value,
-    "text": text.value
+    "name": name,
+    "email": email,
+    "text": text
   }
-  console.log(data)
   Formdata.push(data)
   localStorage.setItem("portfolioData", JSON.stringify(Formdata))
 }
