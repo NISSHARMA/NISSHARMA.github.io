@@ -400,8 +400,9 @@ nav ul.active {
 }
 
 .project-tech-stack {
-    font-size: 15px;
-    color: black;
+    font-size: 20px;
+    color:midnightblue;
+    font-weight: bold;
 
 }
 
@@ -861,7 +862,14 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 300px) {
     
+    header {
+        padding: 2rem 3rem;
+    }
 
+    nav ul {
+        top: 65.18px;
+        height: calc(100vh - 65.18px);
+    }
     
     #home {
         width: 90%;
@@ -955,9 +963,16 @@ input[type=submit]:hover {
 
 }
 
-@media only screen and (max-width: 200px) {
+@media only screen and (max-width: 100px) {
     
+    header {
+        padding: 2rem 3rem;
+    }
 
+    nav ul {
+        top: 65.18px;
+        height: calc(100vh - 65.18px);
+    }
     
     #home {
         width: 100%;
