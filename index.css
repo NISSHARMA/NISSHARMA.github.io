@@ -944,6 +944,7 @@ input[type=submit]:hover {
         margin: auto;
         height: auto;
         margin-top: 20px;
+        padding-bottom: 20px;
 
     }
 
@@ -966,6 +967,9 @@ input[type=submit]:hover {
     #github img {
         width: 80%;
         padding: 20px;
+    }
+    #contact-subdiv1 img{
+        width: 30%;
     }
 
 }
@@ -1080,6 +1084,9 @@ input[type=submit]:hover {
         width: 80%;
         padding: 20px;
     }
+    #contact-subdiv1 img{
+        width: 30%;
+    }
 
 }
 
@@ -1120,6 +1127,9 @@ input[type=submit]:hover {
     #github img {
         width: 80%;
         padding: 20px;
+    }
+    #contact-subdiv1 img{
+        width: 30%;
     }
 
 }
