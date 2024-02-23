@@ -13,7 +13,6 @@ navLinks.forEach((navLinks) => {
   });
 });
 
-
 function openResume() {
   window.open(
     "https://drive.google.com/file/d/18fIvZOhebN8j72NApqkZ4WJ1gtOAiBeO/view?usp=drive_link",
@@ -22,33 +21,26 @@ function openResume() {
 }
 
 function paddingFunction() {
-  let x = doccument.getElementById("home")
-  x.style.padding = "100px"
+  let x = doccument.getElementById("home");
+  x.style.padding = "100px";
 }
 
-document.querySelector("form").addEventListener("submit", saveFile );
-
-
+document.querySelector("form").addEventListener("submit", saveFile);
 
 function saveFile(e) {
+  e.preventDefault();
 
-  e.preventDefault()
+  let Formdata = JSON.parse(localStorage.getItem("portfolioData")) || [];
 
+  let name = document.getElementById("fname").value;
+  let email = document.getElementById("email").value;
+  let text = document.getElementById("subject").value;
 
-  let Formdata = JSON.parse(localStorage.getItem("portfolioData")) || []
-
-  let name=document.getElementById("fname").value
-  let email=document.getElementById("email").value
-  let text=document.getElementById("subject").value
-  
   let data = {
-    "name": name,
-    "email": email,
-    "text": text
-  }
-  Formdata.push(data)
-  localStorage.setItem("portfolioData", JSON.stringify(Formdata))
+    name: name,
+    email: email,
+    text: text,
+  };
+  Formdata.push(data);
+  localStorage.setItem("portfolioData", JSON.stringify(Formdata));
 }
-
-
-
